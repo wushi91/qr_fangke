@@ -1,0 +1,122 @@
+/* pages/mybill/billdetail/billdetail.wxss */
+
+.container{
+  padding-top: 30rpx;
+}
+
+.bill-info{
+  padding: 30rpx;
+  background-color: white;
+}
+
+.bill-info-item{
+  display: flex;
+  align-items: center;
+}
+
+.bill-info-item.bill-info-title-item{
+  margin-top: 10rpx;
+}
+
+
+
+.bill-info-item + .bill-info-item{
+  /*两个item的间隔  */
+  margin-top: 30rpx;
+}
+
+
+.bill-info-item text{
+  font-size:34rpx;
+  color:rgba(53,53,53,1);
+  line-height:48rpx;
+}
+
+.bill-info-item text:nth-child(1){
+  flex: 1;
+}
+
+.bill-info-item .bill-money{
+  font-size:64rpx;
+  color:rgba(242,73,73,1);
+  line-height:90rpx;
+  font-weight:bold;
+}
+
+.bill-info-item .bill-money::after{
+  content:'元';
+  font-weight:normal;
+  font-size:45rpx;
+}
+
+.btn-wrapper {
+  margin-top: 180rpx;
+  text-align: center;
+}
+
+.btn-wrapper button{
+  width: 480rpx;
+  padding-top: 23rpx;
+  padding-bottom: 23rpx;
+}
+
+
+/*已经付款的部分  */
+.bill-deatil-haspay{
+  margin-top: -30rpx;
+}
+
+.bill-deatil-haspay .room-name-wrapper{
+  background-color: white;
+  font-size:34rpx;
+  color:rgba(0,0,0,1);
+  line-height:48rpx;
+  padding:20rpx 30rpx;
+  margin-bottom: 20rpx;
+}
+
+.room-name{
+  font-size:34rpx;
+}
+
+.bill-deatil-haspay .bill-info-item-wrapper{
+padding:30rpx 30rpx;
+background-color: white;
+}
+
+.bill-info-haspay-item{
+  display: flex;
+  align-items: center;
+  font-size:30rpx;
+color:rgba(136,136,136,1);
+line-height:42rpx;
+}
+
+.bill-info-haspay-item text:nth-child(1){
+  flex: 1;
+}
+
+.bill-info-haspay-item + .bill-info-haspay-item{
+  /*两个item的间隔  */
+  margin-top: 20rpx;
+}
+
+.line{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  background-color: #DEDEDE;
+  height: 2rpx;
+}
+
+.bill-info-haspay-item .bill-money{
+  font-size:64rpx;
+color:rgba(41,204,57,1);
+line-height:67rpx;
+font-weight: bold;
+}
+
+.bill-info-haspay-item .bill-money::after{
+  content:'元';
+  font-weight:normal;
+  font-size:45rpx;
+}

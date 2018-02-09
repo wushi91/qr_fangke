@@ -1,0 +1,34 @@
+<!--pages/operaResult/operaResult.wxml-->
+<view class="container">
+
+
+  <view wx:if="{{ operaType ==='pay_fail_password_error' }}" class='wrapper pay-fail-password-error'>
+    <image src="/images/image-error.png"></image>
+    <text class='opera-reulst'>支付失败</text>
+    <text class='opera-tip'>你已连续5次输入错误密码，请1小时后再试</text>
+    <button class='main-button' bindtap="backToBillPage">返回账单</button>
+  </view>
+
+
+  <view wx:if="{{ operaType ==='pay_fail_some_error' }}" class='wrapper pay-fail-some-error'>
+    <image src="/images/image-error.png"></image>
+    <text class='opera-reulst'>支付失败</text>
+    <text class='opera-tip'></text>
+    <button class='main-button' bindtap="backToBillPage">返回账单</button>
+  </view>
+
+  <view wx:if="{{ operaType ==='pay_success_rent' }}" class='wrapper pay-success-rent'>
+    <image src="/images/image-success.png"></image>
+    <text class='opera-reulst'>交租成功</text>
+    <text class='opera-tip'></text>
+    <button class='main-button' bindtap="backToBillPage">返回账单</button>
+  </view>
+ 
+  <view wx:if="{{ operaType ==='confirm_house_success' }}" class='wrapper confirm-house-success'>
+    <image src="/images/image-success.png"></image>
+    <text class='opera-reulst'>你已成功绑定该房源</text>
+    <text class='opera-tip'></text>
+    <button class='main-button' bindtap="backToIndexPage">回到首页</button>
+  </view>
+
+</view>

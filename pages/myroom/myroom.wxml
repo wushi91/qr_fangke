@@ -1,0 +1,48 @@
+<!--pages/myroom/myroom.wxml-->
+<view class="container">
+  <view wx:if='{{isBlankRoom}}' class='has-no-room'>
+    <image class='room-blank-image' src="/images/room-blank-image.png"></image>
+    <text>你还没有添加租房</text>
+    <button class='main-button' bindtap="toSearchRoomPage">添加我的租房</button>
+  </view>
+  <view wx:else class='has-room'>
+    <text class='room-name'>{{myBindRoom.address}}</text>
+    <!-- <view class='has-room-item'>
+      <text>房东手机号</text>
+      <text>{{myBindRoom.phone_num }}</text>
+    </view> -->
+    <view class='line'></view>
+    <view class='has-room-item'>
+      <text>起租日期</text>
+      <text>{{myBindRoom.start_time }}</text>
+    </view>
+    <view class='has-room-item'>
+      <text>截止日期</text>
+      <text>{{myBindRoom.end_time }}</text>
+    </view>
+    <view class='has-room-item'>
+      <text>租期</text>
+      <text>{{myBindRoom.rent_month }}个月</text>
+    </view>
+    <view class='line'></view>
+    <view class='has-room-item'>
+      <text>交租方式</text>
+      <text>{{myBindRoom.pay_type }}月/付</text>
+    </view>
+    <view class='has-room-item'>
+      <text>交租日期</text>
+      <text>{{myBindRoom.pay_time }}号</text>
+    </view>
+    
+    <view class='line'></view>
+    <view class='has-room-item'>
+      <text>押金</text>
+      <text>{{myBindRoom.security_deposit/100 }}元</text>
+    </view>
+    <view class='has-room-item'>
+      <text>每月租金</text>
+      <text>{{myBindRoom.rent/100 }}元</text>
+    </view>
+    
+  </view>
+</view>

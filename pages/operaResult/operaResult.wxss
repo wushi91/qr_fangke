@@ -1,0 +1,71 @@
+/* pages/operaResult/operaResult.wxss */
+
+/* pages/myroom/confirmRoom/confirmRoom.wxss */
+.container{
+  background-color: white;
+}
+
+.wrapper{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper image{
+  width: 186rpx;
+  height: 186rpx;
+  margin-top: 100rpx;
+}
+
+.wrapper .opera-reulst{
+  margin-top: 50rpx;
+  font-size:40rpx;
+  color:rgba(0,0,0,1);
+  line-height:56rpx;
+}
+
+.wrapper .opera-tip{
+  margin-top: 30rpx;
+  font-size:28rpx;
+  color:rgba(136,136,136,1);
+  line-height:40rpx;
+}
+
+.wrapper button{
+  margin-top: 60rpx;
+  width: 480rpx;
+  padding-top: 23rpx;
+  padding-bottom: 23rpx;
+}
+
+
+/* .room-info{
+  background-color: white;
+  height: 276rpx;
+}
+
+.btn-wrapper {
+  margin-top: 124rpx;
+  text-align: center;
+}
+
+.btn-wrapper button{
+  width: 480rpx;
+  padding-top: 23rpx;
+  padding-bottom: 23rpx;
+} */
+
+/* .tip-wrapper{
+  margin-top: 40rpx;
+  text-align: center;
+}
+
+.tip-wrapper text{
+  display: inline-block;
+  text-align: left;
+  width: 480rpx;
+  font-size:24rpx;
+  color:rgba(127,131,137,1);
+  line-height:33rpx;
+} */

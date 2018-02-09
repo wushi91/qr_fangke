@@ -1,0 +1,64 @@
+<!--pages/mybill/mybill.wxml-->
+<view class="container">
+  <!-- <view wx:if='{{(noPayOrederList===null||noPayOrederList.length===0)&&(hasPayOrederList===null||hasPayOrederList.length===0)}}' class='has-no-bill'>
+    <image class='bill-blank-image' src="/images/bill-blank-image.png"></image>
+    <text>你还没有账单</text>
+  </view>
+
+  <view wx:else class='has-bill'> -->
+<view class='has-bill'>
+  <view  class='tob-tab'>
+    <view wx:for="{{tab_status}}"  wx:key
+        class='tob-tab-item {{currentStatus===tab_status[index].prop?"tob-tab-item-select":""}}' 
+        data-current-status="{{tab_status[index].prop}}" 
+        bindtap='payTabClick'>
+      <text>{{tab_status[index].label}}</text>
+    </view>
+  </view>
+    <!-- <view class='my-top-tab'>
+
+      <view data-paystatus="nopay" class='tab-item {{payStatus==="nopay"?"tab-item-select":""}}'   bindtap='payTabClick'>
+        <text>待支付</text>
+      </view>
+
+      <view data-paystatus="haspay" class='tab-item {{payStatus==="haspay"?"tab-item-select":""}}' bindtap='payTabClick'>
+        <text>已支付</text>
+      </view>
+
+    </view> -->
+
+
+
+  <view class='list-wrapper' wx-if='{{currentStatus===tab_status[0].prop}}'>
+
+  <view wx:if='{{noPayOrederList===null||noPayOrederList.length===0}}'>
+    <text class='blank-title'>你还没有待支付的账单</text>
+  </view>
+  <view wx:else>
+      <view class='bill-item' wx:for="{{noPayOrederList}}" wx:key data-billid="{{item.id}}" data-title="{{item.title}}" bindtap='toBillDeatil'>
+      <view class='bill-item-title-wrapper'>
+        <text class='bill-item-title'>{{item.title}}</text>
+        <text class='bill-item-time'>{{item.start_time}}-{{item.end_time}}</text>
+      </view>
+      <text class='bill-item-money' style='color:{{item.needPay?"rgba(242,73,73,1)":"rgba(35,35,35,1)"}}'>{{item.balance/100}}</text>
+      </view>
+    </view>
+    </view>
+    
+    <view class='list-wrapper' wx-if='{{currentStatus===tab_status[1].prop}}'>
+     <view wx:if='{{hasPayOrederList===null||hasPayOrederList.length===0}}'>
+    <text class='blank-title'>你还没有已支付的账单</text>
+  </view>
+  <view wx:else>
+      <view class='bill-item' wx:for="{{hasPayOrederList}}" data-billid="{{item.pay_id}}" data-title="{{item.title}}"  wx:key bindtap='toBillDeatil'>
+      <view class='bill-item-title-wrapper' >
+        <text class='bill-item-title'>{{item.title}}</text>
+        <text class='bill-item-time'>{{item.start_time}}-{{item.end_time}}</text>
+      </view>
+      <text class='bill-item-money has-pay'>{{item.balance/100}}</text>
+      </view>
+    </view>
+ </view>
+  </view>
+    </view>
+<!-- </view> -->

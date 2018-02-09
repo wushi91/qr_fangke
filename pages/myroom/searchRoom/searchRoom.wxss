@@ -1,0 +1,112 @@
+/* pages/searchRoom/searchRoom.wxss */
+
+.container{
+  padding-top: 30rpx;
+  box-sizing: border-box;
+}
+
+
+/* 
+.choose-city{
+  
+  background-color: white;
+}
+
+.choose-city text{
+  font-size:34rpx;
+  color:rgba(0,0,0,1);
+  line-height:48rpx;
+} */
+
+picker{
+  background-color: white;
+  
+}
+
+picker text{
+  display: inline-block;
+  padding: 28rpx 30rpx;
+}
+
+.item{
+  text-align: left;
+  background-color: white;
+  display: flex;
+  align-items: center; 
+}
+
+text.font-list-item{
+  display: block;
+  font-size:34rpx;
+  color:rgba(53,53,53,1);
+  line-height:34rpx;
+  flex: 1;
+}
+text.font-list-item-gray{
+  display: block;
+  font-size:24rpx;
+  color:rgba(136,136,136,1);
+}
+
+/* .item text{
+  font-size:34rpx;
+  color:rgba(0,0,0,1);
+  line-height:48rpx;
+  flex: 1;
+} */
+
+.item image{
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.address-wrapper{
+  background-color: white;
+  margin-top: 30rpx;
+  padding: 0rpx 30rpx; 
+  height: 88rpx;
+  display: flex;
+  align-items: center;
+}
+
+.address-wrapper input{
+
+   /* display: block; */
+  font-size:34rpx;
+  /* color:rgba(53,53,53,1); */
+  line-height:34rpx; 
+}
+
+.item-guess-house-wrapper{
+  margin-top: 20rpx;
+}
+
+.item-guess-house{
+  background-color: white;
+}
+
+.item-guess-house text{
+  display: inline-block;
+  padding: 20rpx 30rpx;
+  font-size:34rpx;
+  color:rgba(53,53,53,1);
+  line-height:48rpx;
+}
+
+.item-guess-house .line{
+  margin: 0 30rpx;
+  background-color: #E6E6E6;
+  height: 2rpx;
+}
+
+.btn-wrapper {
+  text-align: center;
+}
+
+.btn-wrapper button{
+  margin-top: 80rpx;
+}
+
+input:focus{
+  color: red;
+}

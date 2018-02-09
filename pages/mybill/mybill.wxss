@@ -1,0 +1,78 @@
+/* pages/mybill/mybill.wxss */
+
+
+
+.has-no-bill {
+  padding-top: 250rpx;
+  align-self: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.has-no-bill image{
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.has-no-bill text{
+  font-size:34rpx;
+  color:rgba(127,131,137,1);
+  line-height:48rpx;
+}
+
+
+.list-wrapper{
+  padding-top: 100rpx;
+}
+
+.has-bill .bill-item{
+  margin-top: 20rpx;
+  background-color: white;
+  padding: 30rpx;
+  display: flex;
+}
+
+.bill-item .bill-item-title-wrapper{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.bill-item .bill-item-title{ 
+  font-size:34rpx;
+  color:rgba(0,0,0,1);
+  line-height:48rpx;
+}
+
+.bill-item .bill-item-time{
+font-size:24rpx;
+color:rgba(136,136,136,1);
+line-height:33rpx;
+margin-top: 6rpx;
+}
+
+.bill-item .bill-item-money{
+  font-size:48rpx;
+  color:rgba(242,73,73,1);
+  line-height:67rpx;
+}
+.bill-item .bill-item-money::after{
+  content:'元';
+  font-size:28rpx;
+}
+
+.bill-item-money.has-pay{
+  color:#29C62C;
+}
+
+.blank-title{
+  width: 100%;
+  margin-top: 346rpx;
+  display: inline-block;
+  text-align: center;
+  font-size:34rpx;
+  color:rgba(127,131,137,1);
+  line-height:48rpx;
+}

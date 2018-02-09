@@ -1,0 +1,45 @@
+<!--pages/test/test.wxml-->
+<!-- <view class='wrapper'>
+<view class="m-load2">
+    <view class="item"></view>
+    <view class="item"></view>
+    <view class="item"></view>
+    <view class="item"></view>
+    <view class="item"></view>
+    <view class="point"></view>
+</view>
+</view> -->
+
+<!-- <view class='wrapper-text'>
+
+<text>123241254352</text>
+<text>123241254352</text>
+<text>123241254352</text>
+
+<text>123241254352</text>
+<text>123241254352</text>
+<text>123241254352</text>
+<text>123241254352</text>
+
+
+<view>
+<text>123241254352</text>
+</view>
+
+<view style='width:200rpx;heigth:10rpx;'>
+</view>
+
+<view>
+</view>
+</view> -->
+
+<view class='gray-wrapper'>
+<view class='v1'>
+<text class='t1'>123241254352</text>
+</view>
+
+<view class='v2'>
+<text class='t2'>123241254352</text>
+</view>
+
+</view>

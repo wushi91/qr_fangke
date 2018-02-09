@@ -1,0 +1,47 @@
+{
+  "pages": [
+    
+    "pages/myroom/myroom",
+    "pages/myroom/confirmRoom/confirmRoom",
+    "pages/myroom/searchRoom/searchRoom",
+    "pages/mybill/mybill",
+    "pages/myinfo/myinfo",
+    "pages/operaResult/operaResult",
+    "pages/mybill/billdetail/billdetail"
+    
+  ],
+
+  "window": {
+    "navigationBarTitleText": "租房账本",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#2E8AE6",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#7F8389",
+    "selectedColor": "#2E8AE6",
+    "borderStyle": "#000000",
+    "backgroundColor": "#F7F7FA",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/myroom/myroom",
+        "iconPath": "images/icon-room-normal.png",
+        "selectedIconPath": "images/icon-room-select.png",
+        "text": "我的租房"
+      },
+      {
+        "pagePath": "pages/mybill/mybill",
+        "iconPath": "images/icon-bill-normal.png",
+        "selectedIconPath": "images/icon-bill-select.png",
+        "text": "账单"
+      },
+      {
+        "pagePath": "pages/myinfo/myinfo",
+        "iconPath": "images/icon-me-normal.png",
+        "selectedIconPath": "images/icon-me-select.png",
+        "text": "我"
+      }
+    ]
+  }
+}

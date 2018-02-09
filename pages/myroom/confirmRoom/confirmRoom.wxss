@@ -1,0 +1,62 @@
+/* pages/myroom/confirmRoom/confirmRoom.wxss */
+.container{
+  padding-top: 30rpx;
+  box-sizing: border-box;
+}
+
+
+.input-wrapper{
+  padding: 20rpx 30rpx;
+  background-color: white;
+  font-size:34rpx;
+  color:black;
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper+.input-wrapper{
+  margin-top: 30rpx;
+  
+}
+
+.input-wrapper .phone-num{
+  
+  display: inline-block;
+  flex:1;
+}
+
+.input-wrapper .message-code{
+  
+  display: inline-block;
+  flex:1;
+  
+}
+
+.input-wrapper .get-message-code{
+  font-size:34rpx;
+  color:#F24949 ;
+  padding-left: 60rpx;
+  padding-right: 30rpx;
+  border-left: 1px solid #B3B3B3;
+}
+
+.btn-wrapper {
+  margin-top: 124rpx;
+  text-align: center;
+}
+
+
+
+.tip-wrapper{
+  margin-top: 40rpx;
+  text-align: center;
+}
+
+.tip-wrapper text{
+  display: inline-block;
+  text-align: left;
+  width: 480rpx;
+  font-size:24rpx;
+  color:rgba(127,131,137,1);
+  line-height:33rpx;
+}

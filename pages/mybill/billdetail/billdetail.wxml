@@ -1,0 +1,62 @@
+<!--pages/mybill/billdetail/billdetail.wxml-->
+<view class="container">
+<view class='bill-deatil-topay' wx:if="{{payStatus==='nopay'}}">
+  <view class='bill-info'>
+    <text class='room-name'>{{billBean.address}}</text>
+    <view class='bill-info-item bill-info-title-item'>
+      <text>租金</text>
+      <text class='bill-money'>{{billBean.balance/100}}</text>
+    </view>
+    <view class='bill-info-item'>
+      <text>账单期</text>
+      <text>{{billBean.start_time}}-{{billBean.end_time}}</text>
+    </view>
+
+    <view class='bill-info-item'>
+      <text>支付方式</text>
+      <text>微信支付</text>
+    </view>
+  </view>
+
+    <view class='btn-wrapper'>
+    <button class='main-button' bindtap="payTheRenter">确认交租</button>
+    </view>
+  </view>
+  
+  <view class='bill-deatil-haspay' wx:else>
+    
+    <view class='room-name-wrapper'>
+    <text class='room-name'>{{billBean.address}}</text>
+    </view>
+    <view class='bill-info-item-wrapper'>
+    <view class='bill-info-haspay-item'>
+      <text>支付金额</text>
+      <text class='bill-money'>{{billBean.balance/100}}</text>
+    </view>
+    <view class='line'></view>
+    <view class='bill-info-haspay-item'>
+      <text>当前状态</text>
+      <text>{{billBean.status}}</text>
+    </view>
+
+    <view class='bill-info-haspay-item'>
+      <text>租金时间</text>
+      <text>{{billBean.start_time}}-{{billBean.end_time}}</text>
+    </view>
+
+    <view class='bill-info-haspay-item'>
+      <text>支付时间</text>
+      <text>{{billBean.trading_time}}</text>
+    </view>
+
+    <view class='bill-info-haspay-item'>
+      <text>支付方式</text>
+      <text>{{billBean.paytype}}</text>
+    </view>
+
+    <view class='bill-info-haspay-item'>
+      <text>交易单号</text>
+      <text>{{billBean.orderid}}</text>
+    </view></view>
+  </view>
+</view>

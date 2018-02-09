@@ -1,0 +1,68 @@
+/* pages/myroom/myroom.wxss */
+
+
+.has-no-room {
+  padding-top: 250rpx;
+  align-self: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.has-no-room image{
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.has-no-room text{
+  font-size:34rpx;
+  color:rgba(127,131,137,1);
+  line-height:48rpx;
+}
+
+ .has-no-room button{
+  margin-top: 160rpx;
+}
+
+
+.has-room{
+  box-sizing: border-box;
+  min-height: 100%;
+  background: white;
+  padding: 40rpx;
+}
+
+.has-room .room-name{
+  font-size:48rpx;
+  color:rgba(0,0,0,1);
+  line-height:67rpx;
+  display: inline-block;
+  margin-bottom: 20rpx;
+}
+
+.has-room .has-room-item{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.has-room-item + .has-room-item{
+  /*两个item的间隔  */
+  margin-top: 50rpx;
+}
+
+.has-room .line{
+  background-color: #E6E6E6;
+  height: 2rpx;
+}
+
+
+.has-room-item text{
+  font-size:34rpx;
+  color:rgba(53,53,53,1);
+  line-height:48rpx;
+}
+
+.has-room-item text:nth-child(2){
+  float: right;
+}

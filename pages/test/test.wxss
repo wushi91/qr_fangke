@@ -1,0 +1,103 @@
+/* pages/test/test.wxss */
+
+
+
+
+.wrapper{
+  padding-top: 50%;
+  width: 100%;
+  background:#464646;
+}
+
+/** 加载动画的静态样式 **/
+.m-load2{position:relative;width:208px;height:208px;margin:0 auto;border-radius:208px;border:2px solid #fff;overflow:hidden;}
+.m-load2 .item{position:absolute;left:50%;top:0;width:80px;height:100%;margin-left:-40px;}
+.m-load2 .item:nth-child(2){transform:rotate(45deg);}
+.m-load2 .item:nth-child(3){transform:rotate(90deg);}
+.m-load2 .item:nth-child(4){transform:rotate(135deg);clip:rect(-104px,72px,104px,-72px);}
+.m-load2 .item:nth-child(5){transform:rotate(135deg);clip:rect(104px,158px,312px,8px);}
+.m-load2 .item:before,.m-load2 .item:after{content:'';position:absolute;left:0;width:72px;height:100%;}
+.m-load2 .item:before{bottom:52%;border-left:2px solid #fff;transform-origin:left bottom;transform:translate(100%,0) rotate(-45deg);}
+.m-load2 .item:after{top:52%;border-right:2px solid #fff;transform-origin:right top;transform:translate(-100%,0) rotate(-45deg);}
+.m-load2 .item:nth-child(1):before{background:#48ec53;}
+.m-load2 .item:nth-child(1):after{background:#f75e5a;}
+.m-load2 .item:nth-child(2):before{background:#a6ea4b;}
+.m-load2 .item:nth-child(2):after{background:#724dee;}
+.m-load2 .item:nth-child(3):before{background:#e8d84b;}
+.m-load2 .item:nth-child(3):after{background:#44abec;}
+.m-load2 .item:nth-child(4):before{background:#fdc103;}
+.m-load2 .item:nth-child(5):after{background:#51ddeb;}
+
+.m-load2 .point{
+  position:absolute;left:50%;top:50%;width:72px;height:72px;margin:-36px 0 0 -36px;border-radius:72px;background:#464646;
+  }
+
+@keyframes load{
+            100%{-webkit-transform:rotate(360deg);}
+ }
+.m-load2{animation:load 2.1s linear infinite;}
+
+
+.wrapper:active .m-load2{
+  animation:load 0.7s linear infinite;
+}
+
+.wrapper-text{
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-text view{
+  padding: 0;
+  background-color: royalblue;
+}
+.wrapper-text text{
+  margin: 0;
+  /* font-size: 40rpx; */
+  
+  background-color: bisque;
+}
+
+.wrapper-text view text{
+  padding: 0;
+  background-color: red;
+}
+
+.gray-wrapper{
+  background-color: gainsboro;
+}
+
+.v1{
+  height: 120rpx;
+  background-color: red;
+}
+
+.v2{
+  height: 120rpx;
+  background-color: yellowgreen;
+}
+
+.t2{
+  display: inline-block;
+  padding: 0;
+  font-size: 45rpx;
+   line-height: 45rpx; 
+  background-color: bisque;
+   /* height: 45rpx;  */
+}
+
+.t1{
+  display: block;
+  padding: 0;
+  font-size: 35rpx;
+  line-height: 35rpx; 
+  /* height: 35rpx; */
+  background-color:#fdc103;
+}
+
+.t1{
+  /* display: inline-block; */
+  height: 35rpx;
+  padding: 0;
+  color: orchid;
+}

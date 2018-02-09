@@ -1,0 +1,21 @@
+<!--pages/myroom/confirmRoom/confirmRoom.wxml-->
+<view class="container">
+
+  <view class='input-wrapper'>
+    <input class='phone-num' type='number' bindinput='bindinputPhoneNum' maxlength='11' placeholder="请输入你与房东签约时的手机号" placeholder-style="color:rgba(178,178,178,1);" />
+  </view>
+  <view class='input-wrapper'>
+    <input class='message-code' type='number' bindinput='bindinputMessage' maxlength='6' placeholder="请输入6位验证码"      placeholder-style="color:rgba(178,178,178,1);"/>
+    <text wx:if='{{canClickCode}}' class='get-message-code' bindtap='getMessageCode'>{{daojishi}}</text>
+     <text wx:else class='get-message-code' style='opacity: 0.5;'>{{daojishi}}</text>
+  </view>
+
+  <view class='btn-wrapper'>
+    <button class='main-button {{(phoneNum&&messageCode)?"":"disabled"}}' bindtap="chooseTheHouse" disabled='{{(phoneNum&&messageCode)?false:true}}'>绑定该房源</button>
+  </view>
+
+  <view class='tip-wrapper'>
+  <text>绑定该房源后，即可通过小程序给房东交租，如要退房，请联系房东进行操作</text>
+  </view>
+
+</view>

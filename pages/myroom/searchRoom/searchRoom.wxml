@@ -1,0 +1,44 @@
+<!--pages/searchRoom/searchRoom.wxml-->
+<view class="container">
+<picker mode="region" bindchange="bindRegionChange" value="{{region}}">
+  <view class='item'>
+    <text class='font-list-item' 
+          style='color:rgba(178,178,178,1);' 
+          wx:if='{{region.length===0?true:false}}'>请选择房源所在城市</text>
+    <text class='font-list-item' 
+          wx:else>{{region[0]}} {{region[1]}} {{region[2]}}</text>
+    <image src="/images/can-into-right.png"></image>
+   </view>
+</picker>
+
+<view class='address-wrapper'>
+  <input  class='font-list-item'
+          bindinput="bindHouseNameInput" 
+          placeholder-style="color:rgba(178,178,178,1);" 
+          maxlength='70' 
+          placeholder="搜索小区、房号等信息" 
+          value='{{inputHouseName}}'/>
+</view>
+<view class='item-guess-house-wrapper'>
+        <view class='item-guess-house' 
+              wx:for="{{houseSearchList}}" 
+              wx:key data-bookid="{{item.id}}" 
+              data-houseid="{{item.hid}}" 
+              data-address="{{item.address}}" 
+              bindtap='chooseTheHouse' >
+              <text>{{item.address}}</text>
+              <view class='line' 
+                    wx:if="{{index<houseSearchList.length-1}}">
+        </view>
+</view>
+</view>
+
+
+
+  <view class='btn-wrapper'>
+     <button class='main-button {{inputHouseName?"":"disabled"}}'  bindtap="toConfirmTheHouse" disabled='{{inputHouseName?false:true}}'>下一步</button> 
+
+  </view>
+  
+</view>
+
